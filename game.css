@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	padding: 10px;
+	background-color: #01012b;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.main-body {
+	/* position: relative; */
+	font-family: "VT323";
+	font-size: 22px;
+	color: #05d9e8;
+}
+
+.your-name {
+	position: absolute;
+	top: calc(50% - 50px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.your-name.hidden {
+	/* When Submit button is clicked, this class applies. The input will be hidden by adding the new class */
+	display: none;
+}
+
+#username {
+	background-color: black;
+	color: #05d9e8;
+	line-height: 1.5rem;
+	padding: 5px 20px;
+	border-radius: 5%;
+	border: 2px solid #ffa260;
+	width: 100%;
+	margin-bottom: 15px;
+	text-align: center;
+}
+
+.button {
+	background: none;
+	color: #ffa260;
+	border: 2px solid;
+	padding: 0.5rem 1rem;
+	font-size: 0.7rem;
+	border-radius: 5%;
+	transition: color 0.25s, border-color 0.25s, box-shadow 0.25s, transform 0.25s;
+}
+
+.button:hover {
+	border-color: #f1ff5c;
+	color: white;
+	box-shadow: 0 0.5em 0.5em -0.4em #f1ff5c;
+	cursor: pointer;
+}
+
+.game-name {
+	margin-top: 20px;
+	text-align: center;
+}
+
+.game-div {
+	display: flex;
+	height: 80vh;
+	padding: 30px, 50px;
+	margin: 30px;
+	max-width: 2400px;
+	text-align: center;
+	font-family: "VT323";
+	font-size: 22px;
+	color: #fff;
+	background-color: #000018;
+	border: 2px solid #ff2a6d;
+}
+
+.player {
+	flex-direction: row;
+	justify-content: space-between;
+	width: 70%;
+	height: 100%;
+	padding: 10rem 2rem;
+}
+
+.player h2 {
+	position: absolute;
+	top: calc(50% - 310px);
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+h1 {
+	width: 100%;
+	align-content: center;
+	margin-top: 0;
+}
+
+.photo {
+	display: none; /* The photos are not seen at first so the input can be seen instead. */
+	height: 100%;
+	position: relative;
+	border: 2px solid #ff2a6d;
+}
+
+.photo img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
+
+.photo.visible {
+	/* The photos become visible when user clicks Submit button */
+	display: block;
+}
+
+.game-div-container {
+	text-align: center;
+	display: block;
+	margin: 5rem;
+	border: 1px solid #ff2a6d;
+}
+
+h1,
+h2,
+h3 {
+	color: #05d9e8;
+}
+
+/* #ff2a6d
+#d1f7ff
+#05d9e8
+#005678 */
