@@ -60,7 +60,7 @@ function changePicture(event) {  //when either container is clicked the picarray
 		if (event.target.classList.contains('clickable')) {	//I added class to img element so I can target it
 			const parent = event.target.parentNode; // targeting the 'photo' divs that have img elements in them
 			const winnerText = document.createElement('h3'); // I want to display Winner text in the empty container
-			winnerText.innerHTML = 'Winner!';
+			winnerText.innerHTML = 'This is your movie pick for tonight!';
 
 			event.target.remove(); //removes clicked photo after array is empty
 			parent.appendChild(winnerText); //replaces it with the h3
